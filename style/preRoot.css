@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: rgb(13, 34, 174);
+  font-family: monospace;
+}
+body {
+  color: white;
+}
+.navContainer {
+  font-size: 1.4rem;
+  padding: 8px 15px;
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
