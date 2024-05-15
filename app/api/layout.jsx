@@ -8,7 +8,7 @@ export const metadata = {
 export default function RootProducts({ children }) {
   return (
       <div>
-        <SubNavegation root={"/api"} arrayModules={["products"] } titleSep={"Json"} classColor={"blueMetalic"} />
+        <SubNavegation root={"/api"} arrayModules={["products", "entidades"] } titleSep={"Json"} classColor={"blueMetalic"} />
         {children}
       </div>
 

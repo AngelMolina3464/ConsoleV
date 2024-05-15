@@ -18,15 +18,18 @@ export default function SubNavegation({
   };
 
   return (
-    <nav className="navContainer">
-      <FilledBox titleSep={titleSep} classColor={classColor} />
-      {arrayModules.map((element) => (
-        <>
-          <Link href={pathRouting + `/${element}`}>
-            {capitaliceString(element)}
-          </Link>
-        </>
-      ))}
-    </nav>
+    <>
+      <nav className="navContainer">
+        <FilledBox titleSep={titleSep} classColor={classColor} />
+        {arrayModules.map((element) => (
+          <>
+            <Link href={pathRouting + `/${element}`}>
+              {capitaliceString(element)}
+            </Link>
+          </>
+        ))}
+      </nav>
+      <hr />
+    </>
   );
 }

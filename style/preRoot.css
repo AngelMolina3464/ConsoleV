@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   background-color: rgb(13, 34, 174);
-  font-family: monospace;
 }
 body {
+  font-family: monospace;
   color: white;
+  font-size: 1rem;
 }
 .navContainer {
   font-size: 1.4rem;

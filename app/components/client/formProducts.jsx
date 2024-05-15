@@ -3,17 +3,19 @@
 export const FormProducts = () => {
   return (
     <>
-      <h2>Formulario </h2>
-      
-      <form >
+      <hr />
+      <br />
+      <strong>Formulario</strong>
+      <form className="formContainer">
         <label htmlFor="">Nombre:</label>
         <input type="text" />
         <label htmlFor="">Clase</label>
         <input type="text" />
-        <button>Guardar</button>
-        <button>Limpiar</button>
+        <div>
+          <button>Guardar</button>
+          <button>Limpiar</button>
+        </div>
       </form>
-    
     </>
   );
 };

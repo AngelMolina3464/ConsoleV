@@ -18,27 +18,26 @@ a:active {
 p {
   padding: 5px 10px;
   color: rgb(230, 230, 230);
-  font-size: 1.2rem;
-}
-strong {
-  font-size: 1.2rem;
 }
 
 .blueMetalic {
   border-radius: 10px 5px;
   background-color: rgb(4, 11, 129);
   border: 2px solid rgba(255, 255, 255, 0.543);
+  padding: 4px 8px;
 }
 
 .redMetalic {
   border-radius: 10px 5px;
   background-color: rgb(181, 26, 5);
   border: 2px solid rgba(255, 255, 255, 0.867);
+  padding: 4px 8px;
 }
 .yellowMetalic {
   border-radius: 10px 5px;
   background-color: rgb(235, 220, 9);
-  color: rgba(0, 0, 0, 0.753);
+  color: rgba(0, 0, 0, 0.919);
+  padding: 4px 8px;
 }
 
 h1,
@@ -75,4 +74,30 @@ strong::selection {
 p::selection {
   background-color: rgb(213, 238, 114);
   color: black;
+}
+label {
+  margin: 5px 0px;
+}
+input {
+  padding: 5px 10px;
+  margin: 5px 0px;
+  width: 80%;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+button {
+  margin: 5px 8px;
+  padding: 4px 8px;
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+  border: 2px solid white;
+}
+
+.formContainer {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
 }
