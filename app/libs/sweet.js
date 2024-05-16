@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 
-export const signalPopUp = (header, firstMensaje, firstIcon, dataPacking) => {
+export const signalPopUp = (header, firstMensaje, firstIcon, setData) => {
   Swal.fire({
     position: "top-end",
     title: header,
@@ -14,14 +14,16 @@ export const signalPopUp = (header, firstMensaje, firstIcon, dataPacking) => {
     toast: true,
   }).then(async (result) => {
     if (result.isConfirmed) {
-      const response = await fetch("/products/productAdd", {
+      // Aqui Hace el Envio a la API
+      const response = await fetch("../api/products/productAdd", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(dataPacking),
+        body: JSON.stringify(setData),
       });
-      console.log(dataPacking);
+
+      console.log("Producto Creado")
       Swal.fire({
         position: "top-end",
         background: "rgba(255, 255, 255, 0.90)",

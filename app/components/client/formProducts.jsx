@@ -21,15 +21,7 @@ export const FormProducts = () => {
   const submitForm = async (event) => {
     event.preventDefault();
 
-    //signalPopUp("Creacion de Producto", "Deseas Crearlo ? ", "question", setSend);
-
-    const response = await fetch("api/products/productAdd", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    signalPopUp("Creacion de Producto", "Deseas Crearlo ? ", "question", data);
   };
 
   return (
