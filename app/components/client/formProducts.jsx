@@ -8,6 +8,8 @@ export const FormProducts = () => {
     clase: "",
   });
 
+  const { send, setSend } = useState(0);
+
   const handle__NameInnertHtml = (event) => {
     setData({ ...data, nombre: event.target.value });
   };
@@ -16,9 +18,18 @@ export const FormProducts = () => {
     setData({ ...data, clase: event.target.value });
   };
 
-  const submitForm = (event) => {
+  const submitForm = async (event) => {
     event.preventDefault();
-    signalPopUp("Creaciond de Producto", "Deseas Crearlo ? ", "question", data);
+
+    //signalPopUp("Creacion de Producto", "Deseas Crearlo ? ", "question", setSend);
+
+    const response = await fetch("api/products/productAdd", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
   };
 
   return (

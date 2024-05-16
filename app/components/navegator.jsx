@@ -7,6 +7,7 @@ export default function Navegation() {
       <Link href={"/"}>Principal</Link>
       <Link href={"/interfaz"}>Interfaz</Link>
       <Link href={"/products"}>Productos</Link>
+      <Link href={"/tags"}>Tags</Link>
       <Link href={"/api"}>GetApi</Link>
     </nav>
   );
