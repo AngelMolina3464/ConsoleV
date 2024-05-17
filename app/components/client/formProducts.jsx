@@ -8,7 +8,7 @@ export const FormProducts = () => {
     clase: "",
   });
 
-  const { send, setSend } = useState(0);
+  const [dataDefault, setDataDefault] = useState("");
 
   const handle__NameInnertHtml = (event) => {
     setData({ ...data, nombre: event.target.value });
@@ -24,6 +24,11 @@ export const FormProducts = () => {
     signalPopUp("Creacion de Producto", "Deseas Crearlo ? ", "question", data);
   };
 
+  const handle__DefaultChangeValue = (event) => {
+    event.preventDefault();
+    setDataDefault("");
+  };
+
   return (
     <>
       <hr />
@@ -31,12 +36,15 @@ export const FormProducts = () => {
       <strong>Formulario</strong>
       <form className="formContainer">
         <label htmlFor="">Nombre:</label>
-        <input type="text" onChange={handle__NameInnertHtml} />
+        <input
+          type="text"
+          onChange={handle__NameInnertHtml}
+        />
         <label htmlFor="">Clase</label>
         <input type="text" onChange={handle__ClassInnertHtml} />
         <div>
           <button onClick={submitForm}>Crear</button>
-          <button>Limpiar</button>
+          <button onClick={handle__DefaultChangeValue}>Limpiar</button>
         </div>
       </form>
     </>

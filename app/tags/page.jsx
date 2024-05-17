@@ -1,8 +1,8 @@
+import SubNavegation from "../components/subNavegation";
+
 export default function Tags() {
   return (
     <div className="useContainer">
-      <hr />
-      <br />
       <h1>Tags</h1>
       <strong>Asignacion y Movimiento de Tags </strong>
       <p>

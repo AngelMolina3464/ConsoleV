@@ -19,7 +19,7 @@ export default function SubNavegation({
 
   return (
     <>
-      <nav className="navContainer">
+      <section className="navContainer">
         <FilledBox titleSep={titleSep} classColor={classColor} />
         {arrayModules.map((element) => (
           <>
@@ -28,7 +28,7 @@ export default function SubNavegation({
             </Link>
           </>
         ))}
-      </nav>
+      </section>
       <hr />
     </>
   );

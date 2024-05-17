@@ -11,9 +11,3 @@ body {
   color: white;
   font-size: 1rem;
 }
-.navContainer {
-  padding: 8px 15px;
-  display: flex;
-  column-gap: 15px;
-  align-items: center;
-}

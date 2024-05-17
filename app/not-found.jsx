@@ -3,7 +3,7 @@ import SubNavegation from "./components/subNavegation";
 
 export default function NotFound() {
   return (
-    <div>
+    <div className="useContainer">
       <p>
         <FilledBox titleSep={"Error 404 ❌"} classColor={"redMetalic"} />
       </p>
