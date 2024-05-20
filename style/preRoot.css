@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 html {
-  background-color: rgb(13, 34, 174);
+  background-color: rgb(18, 24, 66);
 }
 body {
   font-family: monospace;
-  color: white;
+  color: rgb(241, 241, 7);
   font-size: 1rem;
 }

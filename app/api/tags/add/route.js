@@ -6,7 +6,7 @@ export async function POST(req, res) {
   // Add In Firebase
   CreateDocFirebase("tags", body);
 
-  return new Response(JSON.stringify("Prodcutos Agregado!"), {
+  return new Response(JSON.stringify("Producto Agregado!"), {
     status: 200,
     "Content-Type": "application/json",
   });

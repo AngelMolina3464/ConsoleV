@@ -6,7 +6,6 @@ export default function Navegation() {
     <nav className="navContainer">
       <Link href={"/"}>Principal</Link>
       <Link href={"/interfaz"}>Interfaz</Link>
-      <Link href={"/products"}>Productos</Link>
       <Link href={"/tags"}>Tags</Link>
       <Link href={"/api"}>GetApi</Link>
     </nav>

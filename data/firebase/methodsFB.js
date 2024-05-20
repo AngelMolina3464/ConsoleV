@@ -8,7 +8,8 @@ export const GetDocsFirebase = async (collectionLibrary) => {
   const querySnapshot = await getDocs(q);
   querySnapshot.forEach((doc) => {
     // doc.data() is never undefined for query doc snapshots
-    data.push(doc.id, doc.data());
+    const dataRow = { ...doc.data(), idAuto: doc.id };
+    data.push(dataRow);
     // console.log(doc.id, " => ", doc.data());
   });
   return data;
