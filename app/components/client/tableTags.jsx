@@ -23,7 +23,7 @@ export const TableTags = ({ arrayHeaders }) => {
     }
   };
 
-  useEffect(() => {
+  const loadFetch = () => {
     fetch("http://localhost:3000/api/tags", {
       method: "GET",
       headers: {
@@ -43,6 +43,10 @@ export const TableTags = ({ arrayHeaders }) => {
         setError(error);
         console.error("Error:", error);
       });
+  };
+
+  useEffect(() => {
+    loadFetch();
   }, [reload]);
 
   return (
